@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿# Clinicians Web App e2e Automation
 
 [![Playwright](https://img.shields.io/badge/Powered%20by-Playwright-blueviolet)](https://playwright.dev/)
@@ -140,5 +141,8 @@ test('User logs into Web App', async ({ page }) => {
     // Use the loginToWebApp function to perform the login
     await loginToWebApp(page);
 
-})
+ })
 ```
+=======
+# SelfServicePortal-TestAutomation
+>>>>>>> fb8eb0c8cfc832a7958fb5254afa31061bf783b0
