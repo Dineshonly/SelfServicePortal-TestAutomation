@@ -1,0 +1,46 @@
+﻿[
+  {
+    "firstName": "AutomationFirstNameRef1",
+    "lastName": "AutomationLastNameRef1",
+    "email": "automation01@medsoltech.email",
+    "primaryPhoneNumber": "4021231234",
+    "alternatePhoneNumber": "7124322123",
+    "facilityWorkedAt": "AutomationFacilityOne",
+    "city": "Omaha",
+    "state": "Nebraska",
+    "displayOrder": 1
+  },
+  {
+    "firstName": "AutomationFirstNameRef2",
+    "lastName": "AutomationLastNameRef2",
+    "email": "automation02@medsoltech.email",
+    "primaryPhoneNumber": "7121231234",
+    "alternatePhoneNumber": "3157999531",
+    "facilityWorkedAt": "AutomationFacilityTwo",
+    "city": "Lincoln",
+    "state": "Alaska",
+    "displayOrder": 2
+  },
+  {
+    "firstName": "AutomationFirstNameRef3",
+    "lastName": "AutomationLastNameRef3",
+    "email": "automation03@medsoltech.email",
+    "primaryPhoneNumber": "7121231233",
+    "alternatePhoneNumber": "3157999533",
+    "facilityWorkedAt": "AutomationFacilityThree",
+    "city": "Phoenix",
+    "state": "Arizona",
+    "displayOrder": 3
+  },
+  {
+    "firstName": "AutomationFirstNameRef4",
+    "lastName": "AutomationLastNameRef4",
+    "email": "automation04@medsoltech.email",
+    "primaryPhoneNumber": "7121231444",
+    "alternatePhoneNumber": "3157999444",
+    "facilityWorkedAt": "AutomationFacilityFour",
+    "city": "Los Angeles",
+    "state": "California",
+    "displayOrder": 4
+  }
+]

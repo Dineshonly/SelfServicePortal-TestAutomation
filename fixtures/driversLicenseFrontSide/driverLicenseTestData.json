@@ -1,0 +1,13 @@
+﻿{
+  "licenseTestData": [
+    {
+      "expirationDate":"09092028",
+      "state": "Nebraska",
+      "licenseNumber":"NE123456789"
+    },
+    {
+      "expirationDate":"01092030",
+      "state": "Iowa",
+      "licenseNumber":"IA123456789"
+    }
+]}

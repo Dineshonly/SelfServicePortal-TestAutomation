@@ -1,0 +1,12 @@
+{ "payBenefitsDocumentExpectedURL": [
+    {
+      "legalNoticeExpectedURL": "/legal-notices-2021.pdf",
+      "benefitComplianceNoticesExpectedURL":"/2024 Benefit Compliance Notices.pdf",
+      "clinicianBenefitsGuideExpectedURL":"/Clinician-Benefits-Guide-2024.pdf",
+      "dependentVerificationFAQExpectedURL":"/2024 Dependent Verification FAQ.pdf",
+      "healthComplianceNoticesExpectedURL":"/Health-Compliance-Notices-2024.pdf",
+      "iDCardTemplateExpectedURL":"/ID-Card-Template-2024.pdf",
+      "oEDependentVerificationFAQExpectedURL":"/OE-Dependent-Verification-FAQ-2024.pdf"
+    }
+  ]
+}

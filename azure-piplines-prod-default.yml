@@ -1,0 +1,51 @@
+﻿trigger:
+  branches:
+    include:
+      - none
+pool:
+  vmImage: 'ubuntu-latest'
+
+stages:
+  - stage: PROD
+    displayName: 'Run Playwright Tests for PROD Environment'
+    jobs:
+      - job: RunTestsPROD
+        displayName: 'Running Playwright Tests for PROD Navigation Smoke Test'
+        steps:        
+          - script: npm ci
+            displayName: 'Install Dependencies'
+            workingDirectory: $(Build.SourcesDirectory)
+
+          - script: echo "##vso[task.setvariable variable=AZURE_TOKEN;issecret=true]$(AZURE_TOKEN)"
+            displayName: set ADO Token env var for Azure Test Plans reporter
+
+          - script: npx playwright install --with-deps
+            displayName: 'Install Playwright'
+            workingDirectory: $(Build.SourcesDirectory)
+
+          - script: npm run test:smoke:default:prod
+            displayName: 'Run Playwright Tests'
+            workingDirectory: $(Build.SourcesDirectory)
+
+          - task: PublishTestResults@2
+            displayName: 'Publish Test Results PROD Navigation Smoke Test'
+            inputs:
+              searchFolder: 'test-results'
+              testResultsFormat: 'JUnit'  # Adjust this format based on your test results
+              testResultsFiles: '**/test-results.xml'  # Adjust the file path based on your test results file
+              mergeTestResults: true
+              failTaskOnFailedTests: true
+              testRunTitle: 'PROD Navigation Smoke Test'
+            condition: succeededOrFailed()
+          - task: PublishPipelineArtifact@1
+            inputs:
+              targetPath: $(Build.SourcesDirectory)/test-results/html/index.html
+              artifact: playwright-report
+              publishLocation: 'pipeline'
+            condition: succeededOrFailed()
+          - task: PublishCodeCoverageResults@1
+            inputs:
+              codeCoverageTool: 'Cobertura'
+              summaryFileLocation: $(Build.SourcesDirectory)/coverage/cobertura-coverage.xml
+              pathToSources: $(Build.SourcesDirectory)/coverage
+            condition: always()

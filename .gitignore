@@ -1,0 +1,17 @@
+node_modules/
+/test-results/
+/playwright-report/
+/playwright/.cache/
+.vs/
+/.idea/.idea.clinicians-web-app-tests.dir/.idea/jsLibraryMappings.xml
+/.idea/.idea.clinicians-web-app-tests.dir/.idea/misc.xml
+/.idea/.idea.clinicians-web-app-tests.dir/.idea/vcs.xml
+/.idea/.idea.clinicians-web-app-tests.dir/.idea/indexLayout.xml
+/.artifacts/
+artifacts/
+/.vs/
+/.idea/
+.idea/workspace.xml
+/.nyc_output/
+/coverage/
+/playwright-report-junit/e2e-junit-results.xml

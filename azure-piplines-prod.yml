@@ -1,0 +1,37 @@
+﻿trigger:
+  branches:
+    include:
+      - none
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+stages:
+  - stage: PROD
+    displayName: 'Run Playwright Tests for Prod Environment'
+    jobs:
+      - job: RunTestsPROD
+        displayName: 'Running Playwright Tests for PROD'
+        steps:
+          - script: npm ci
+            displayName: 'Install Dependencies'
+            workingDirectory: $(Build.SourcesDirectory)
+
+          - script: npx playwright install --with-deps
+            displayName: 'Install Playwright'
+            workingDirectory: $(Build.SourcesDirectory)
+
+          - script: npm run test:smoke:tags:prod
+            displayName: 'Run Playwright Tests'
+            workingDirectory: $(Build.SourcesDirectory)
+
+          - task: PublishTestResults@2
+            displayName: 'Publish Test Results PROD'
+            inputs:
+              searchFolder: 'test-results'
+              testResultsFormat: 'JUnit'  # Adjust this format based on your test results
+              testResultsFiles: '**/test-results.xml'  # Adjust the file path based on your test results file
+              mergeTestResults: true
+              failTaskOnFailedTests: true
+              testRunTitle: 'Test Results PROD'
+            condition: succeededOrFailed()

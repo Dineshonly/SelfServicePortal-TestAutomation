@@ -1,0 +1,39 @@
+﻿{ "currentAddressTestData": [
+    {
+      "streetAddress": "123 Med Sol Drive",
+      "city":"Omaha",
+      "selectState":"Nebraska",
+      "zipCode":"68116"
+    },
+    {
+      "streetAddress": "400 Med Sol Drive",
+      "city":"Lincoln",
+      "selectState":"Nebraska",
+      "zipCode":"68508"
+    }
+  ],
+  "currentCommunicationTestData": [
+    {
+      "Email":"Email"
+    },
+    {
+      "Any": "Any"
+    }
+  ],
+  "currentCredentialsTestData": [
+    {
+      "ARDMS": "ARDMS"
+    },
+    {
+      "ARRT": "ARRT"
+    }
+  ],
+  "currentJobPreferenceTestData": [
+    {
+      "All": "All"
+    },
+    {
+      "No Preference": "No Preference"
+    }
+  ]
+}

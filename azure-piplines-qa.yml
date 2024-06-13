@@ -1,0 +1,41 @@
+﻿trigger:
+  branches:
+    include:
+      - none
+
+variables:
+  - name: APP_DATA_PATH
+    value: '/home/vsts/work/1/s/fixtures/driversLicenseFrontSide/driverLicenseTestData.json'
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+stages:
+  - stage: QA
+    displayName: 'Run Playwright Tests for QA Environment'
+    jobs:
+      - job: RunTestsQA
+        displayName: 'Running Playwright Tests for QA'
+        steps:
+          - script: npm ci
+            displayName: 'Install Dependencies'
+            workingDirectory: $(Build.SourcesDirectory)
+
+          - script: npx playwright install --with-deps
+            displayName: 'Install Playwright'
+            workingDirectory: $(Build.SourcesDirectory)
+
+          - script: npm run test:e2e:qa
+            displayName: 'Run Playwright Tests'
+            workingDirectory: $(Build.SourcesDirectory)
+
+          - task: PublishTestResults@2
+            displayName: 'Publish Test Results QA'
+            inputs:
+              searchFolder: 'test-results'
+              testResultsFormat: 'JUnit'  # Adjust this format based on your test results
+              testResultsFiles: '**/test-results.xml'  # Adjust the file path based on your test results file
+              mergeTestResults: true
+              failTaskOnFailedTests: true
+              testRunTitle: 'Test Results QA'
+            condition: succeededOrFailed()

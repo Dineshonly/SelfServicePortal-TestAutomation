@@ -1,0 +1,171 @@
+﻿{
+  "personalInfoTestData": [
+    {
+      "phoneNumber": "4021021232",
+      "job title": "CNA (Nurse Aide)",
+      "selectSpecialty": "Dietary",
+      "ssn": "123456789",
+      "dob": "01011980",
+      "otherLegalNames": "John Doe"
+    },
+    {
+      "phoneNumber": "7121235432",
+      "selectSpecialty": "Reg Unit",
+      "ssn": "987654321",
+      "dob": "05151985",
+      "otherLegalNames": "Jane Smith"
+    }
+  ],
+  "currentAddressTestData": [
+    {
+      "streetAddress": "123 MedSol Drive",
+      "city":"Omaha",
+      "selectState":"Nebraska",
+      "zipCode":"68116"
+    },
+    {
+      "streetAddress": "400 MedSol Drive",
+      "city":"Lincoln",
+      "selectState":"Nebraska",
+      "zipCode":"68508"
+    }
+  ],
+  "emergencyInformationTestData": [
+    {
+      "firstName": "Med",
+      "lastName":"Sol",
+      "relationship":"Coworker",
+      "email":"automation01@email.com",
+      "primaryPhoneNumber":"4021021232",
+      "alternatePhoneNumber":"4021021232"
+    },
+    {
+      "firstName": "Auto",
+      "lastName":"Mation",
+      "relationship":"Sister",
+      "email":"automation02@email.com",
+      "primaryPhoneNumber":"4021021232",
+      "alternatePhoneNumber":"4021021232"
+    }
+  ],
+  "experienceTestData": [
+    {
+      "totalYearsOfMedicalExperience": "25",
+      "ClinicAreaWorked":"PSYCH",
+      "YearsOfExperience":"8",
+      "FacilityName":"1Automation",
+      "FromDate":"092000",
+      "StreetAddressFacility":"1231231234",
+      "CityFacility":"Omaha",
+      "StateFacility":"Nebraska",
+      "ZipFacility":"68116",
+      "UnitDepartment":"402",
+      "TraumaLevel":"1st",
+      "AssignmentType":"Travel",
+      "Shift":"AM",
+      "NursePatientRatio":"5",
+      "NumberOfBedsInUnit":"113",
+      "SupervisorName":"Playwright",
+      "ContactPhone":"4014011001",
+      "NameOfCompany":"Automation Inc" 
+    },
+    {
+      "totalYearsOfMedicalExperience": "15",
+      "ClinicAreaWorked":"PICU",
+      "YearsOfExperience":"37",
+      "FacilityName":"2Automation",
+      "FromDate":"092020",
+      "StreetAddressFacility":"9087651234",
+      "CityFacility":"Omaha",
+      "StateFacility":"Nebraska",
+      "ZipFacility":"68116",
+      "UnitDepartment":"402",
+      "TraumaLevel":"1st",
+      "AssignmentType":"PRN",
+      "Shift":"PM",
+      "NursePatientRatio":"5",
+      "NumberOfBedsInUnit":"75",
+      "SupervisorName":"Playwright",
+      "ContactPhone":"4014011001",
+      "NameOfCompany":"Playwright Inc"
+    }
+  ],
+  "educationTestData": [
+    {
+      "chartingSkills": "MIS",
+      "schoolName":"Sol",
+      "dateGraduated":"091980",
+      "schoolCity":"Omaha",
+      "schoolState":"Nebraska",
+      "degree":"MA",
+      "degreeType":"AS"
+    },
+    {
+      "chartingSkills": "MIS",
+      "schoolName":"Sol",
+      "dateGraduated":"091980",
+      "schoolCity":"Omaha",
+      "schoolState":"Nebraska",
+      "degree":"BS",
+      "degreeType":"AS"
+    }
+  ],
+  "licenseTestData": [
+    {
+      "stateLicense": "Nebraska",
+      "licenseNumber":"123",
+      "licenseExpirationDate":"09092028"
+    },
+    {
+      "stateLicense": "Nebraska",
+      "licenseNumber":"123",
+      "licenseExpirationDate":"09092028"
+    }
+  ],  "compactLicenseTestData": [
+  {
+    "stateLicense": "Alabama",
+    "licenseNumber":"ABC123456",
+    "licenseExpirationDate":"12092035"
+  },
+  {
+    "stateLicense": "Iowa",
+    "licenseNumber":"C890786876",
+    "licenseExpirationDate":"01092040"
+  }
+],
+  "certificationsTestData": [
+    {
+      "certificationType": "ACLS",
+      "certificationExpirationDate":"09092028"
+    },
+    {
+      "certificationType": "ARDMS",
+      "certificationExpirationDate":"09092035"
+    }
+  ],
+  "preferencesTestData": [
+    {
+      "desiredStates":"Nebraska",
+      "dateYouCanStart":"09092028",
+      "salaryExpectations":"35",
+      "shiftPreferences":"All",
+      "clinicAreasPreferred":"Test" 
+    },
+    {
+      "desiredStates":"Nebraska",
+      "dateYouCanStart":"09092028",
+      "salaryExpectations":"35",
+      "shiftPreferences":"All",
+      "clinicAreasPreferred":"Test"
+    }
+  ],
+  "signatureTestData": [
+    {
+      "fullNameSignature":"John Doe",
+      "dateSignature":"09092028"
+    },
+    {
+      "fullNameSignature":"John Doe",
+      "dateSignature":"09092028"
+    }  
+  ]}

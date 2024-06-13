@@ -1,0 +1,44 @@
+{
+  "name": "ciroclinicianswebapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:e2e:qa": "cross-env NODE_ENV=qa playwright test --grep @smoke-qa",
+    "test:tags:qa": "cross-env NODE_ENV=qa playwright test --grep @smoke-qa",
+    "test:smoke:default:qa:browser": "cross-env NODE_ENV=qa playwright test --grep @smoke-qa-default --headed --workers 1",
+    "test:smoke:default:qa": "nyc cross-env NODE_ENV=qa playwright test --grep @smoke-qa-default",
+    "test:smoke:azure:qa": "cross-env NODE_ENV=qa playwright test --grep @smoke-qa-default",
+    "test:smoke:new-user:qa:browser": "cross-env NODE_ENV=qa playwright test --grep @smoke-qa-new-user --headed --workers 1",
+    "test:e2e:uat": "cross-env NODE_ENV=uat playwright test",
+    "test:smoke:tags:uat": "cross-env NODE_ENV=uat playwright test --grep @smoke-uat",
+    "test:smoke:new-user:uat:browser": "cross-env NODE_ENV=uat playwright test --grep @smoke-uat-new-user --headed --workers 1",
+    "test:smoke:default:uat:browser": "cross-env NODE_ENV=uat playwright test --grep @smoke-uat-default --headed --workers 1",
+    "test:smoke:default:uat": "nyc cross-env NODE_ENV=uat playwright test --grep @smoke-uat-default",
+    "test:e2e:prod": "cross-env NODE_ENV=prod playwright test",
+    "test:smoke:tags:prod": "cross-env NODE_ENV=prod playwright test --grep @smoke-prod",
+    "test:smoke:tags:prod:browser": "cross-env NODE_ENV=prod playwright test --grep @smoke-prod --headed --workers 1",
+    "test:smoke:default:prod:browser": "cross-env NODE_ENV=prod playwright test --grep @smoke-prod-default --headed --workers 1",
+    "test:smoke:new-user:prod:browser": "cross-env NODE_ENV=prod playwright test --grep @smoke-prod-new-user --headed --workers 1",
+    "test:smoke:default:prod": "nyc cross-env NODE_ENV=prod playwright test --grep @smoke-prod-default"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@alex_neo/playwright-azure-reporter": "^1.8.0",
+    "axios": "^1.5.1",
+    "azure-devops-node-api": "^12.3.0",
+    "cheerio": "^1.0.0-rc.12",
+    "fs": "^0.0.1-security",
+    "https": "^1.0.0",
+    "playwright": "^1.40.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.42.1",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1",
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0"
+  }
+}

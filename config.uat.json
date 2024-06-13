@@ -1,0 +1,16 @@
+﻿{
+  "baseUrl": "",
+  "username": "",
+  "password": "",
+  "username2": "",
+  "password2": "",
+  "pulseUrl": "",
+  "pulseUsername": "",
+  "pulsePassword": "",
+  "APP_DATA_PATH": "/home/vsts/work/1/s/fixtures/driversLicenseFrontSide/driverLicenseTestData.json",
+  "DEFAULT_USER": "",
+  "DEFAULT_PASSWORD": "",
+  "AZURE_TOKEN": "kgzppsmq4yz6pwedazbb63tma7xfy6soncljl3oei7yezvuz4slq",
+  "AssignmentUsername":"",
+  "Assignmentpassword":""
+}
